@@ -35,6 +35,7 @@ const GalleryItemPage = () => {
   }
 
   useEffect(() => {
+    scrollLeft
     if (!swiperRef.current) return;
     isSlidingRight && (swiperRef.current.scrollLeft += 5);
     isSlidingLeft && (swiperRef.current.scrollLeft -= 5);
