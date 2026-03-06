@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Trade Gothic;
+  src: url("/src/assets/fonts/trade-gothic-similar/OldSansBlack/OldSansBlack.ttf");
+}
+
+@import "tailwindcss";
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
+@theme {
+  --font-trade-gothic: Trade Gothic, "sans-serif";
+}
