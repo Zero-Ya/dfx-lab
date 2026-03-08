@@ -30,21 +30,21 @@ const News = () => {
   return (
     <div className="flex text-[16px] flex-col gap-4 justify-center items-center pt-10 min-[600px]:pt-16 min-[800px]:pt-20">
       <hr className="w-full h-[1.5px] bg-black"/>
-      <div className="w-full text-left text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] pl-8 min-[600px]:pl-12">What's New</div>
+      <div className="w-full text-left text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] pl-6 min-[600px]:pl-12">What's New</div>
 
       <div onMouseEnter={() => {
           setAutoPlay(false);
           clearTimeout(timeOut);
         }}
         onMouseLeave={() => setAutoPlay(true)}
-        className="w-full h-80 rounded-xl bg-black relative overflow-hidden">
+        className="flex w-full h-80 rounded-xl bg-black min-[800px]:overflow-x-hidden overflow-x-scroll overflow-y-hidden min-[800px]:snap-none snap-x min-[800px]:snap-proximity snap-mandatory min-[800px]:scroll-auto scroll-smooth no-scrollbar relative">
         {newsData.map((item, index) => (
           <NewsBox key={item.id} current={current} index={index} item={item} />
         ))}
-        <div onClick={slideLeft} className={`${autoPlay && "hidden"} select-none text-3xl text-white size-4 min-[600px]:size-8 pb-2.25 flex justify-center items-center absolute top-1/2 left-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&lsaquo;</div>
-        <div onClick={slideRight} className={`${autoPlay && "hidden"} select-none text-3xl text-white size-4 min-[600px]:size-8 pb-2.25 flex justify-center items-center absolute top-1/2 right-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&rsaquo;</div>
+        <div onClick={slideLeft} className={`${autoPlay && "min-[800px]:hidden"} hidden select-none text-3xl text-white size-4 min-[600px]:size-8 pb-2.25 min-[800px]:flex justify-center items-center absolute top-1/2 left-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&lsaquo;</div>
+        <div onClick={slideRight} className={`${autoPlay && "min-[800px]:hidden"} hidden select-none text-3xl text-white size-4 min-[600px]:size-8 pb-2.25 min-[800px]:flex justify-center items-center absolute top-1/2 right-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&rsaquo;</div>
 
-        <div className="absolute bottom-1 left-1/2 -translate-x-1/2 translate-y-0">
+        <div className="hidden min-[800px]:block absolute bottom-1 left-1/2 -translate-x-1/2 translate-y-0">
           {newsData.map((item, index) => 
           <div key={item.id} onClick={() => setCurrent(index)} className={`size-2 m-1 border border-white cursor-pointer rounded-full inline-block ${index == current && "bg-white"}`}>
           </div>)}

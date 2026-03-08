@@ -1,6 +1,6 @@
 // Imports
 import { useState, useRef, useEffect } from "react";
-import { Link, useParams } from "react-router-dom"
+import { Link, useParams, ScrollRestoration } from "react-router-dom"
 import Topbar from "../main-components/Topbar"
 import Footer from "../main-components/Footer";
 import { galleryData } from "../data-storage/galleryData";
@@ -102,6 +102,7 @@ const GalleryItemPage = () => {
         </div>
       </div>
     </div>
+    <ScrollRestoration />
     <Footer />
     </>
   )

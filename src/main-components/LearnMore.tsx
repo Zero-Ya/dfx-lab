@@ -1,6 +1,6 @@
 const LearnMore = () => {
   return (
-    <div className="text-[10px] min-[600px]:text-[12px] min-[800px]:text-[18px] min-[1024px]:text-[20px] flex flex-col gap-4 px-8 min-[600px]:px-12">
+    <div className="text-[10px] min-[600px]:text-[12px] min-[800px]:text-[18px] min-[1024px]:text-[20px] flex flex-col gap-4 px-6 min-[600px]:px-12">
       <div className="text-[16px] min-[600px]:text-[24px] min-[800px]:text-[32px] min-[1024px]:text-[36px]">Why Choose DFX Lab?</div>
 
       <div className="flex flex-col gap-4">
