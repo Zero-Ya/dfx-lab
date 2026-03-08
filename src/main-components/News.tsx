@@ -37,7 +37,7 @@ const News = () => {
           clearTimeout(timeOut);
         }}
         onMouseLeave={() => setAutoPlay(true)}
-        className="flex w-full h-80 rounded-xl bg-black min-[800px]:overflow-x-hidden overflow-x-scroll overflow-y-hidden min-[800px]:snap-none snap-x min-[800px]:snap-proximity snap-mandatory min-[800px]:scroll-auto scroll-smooth no-scrollbar relative">
+        className="flex w-full h-60 min-[600px]:h-80 rounded-xl bg-black min-[800px]:overflow-x-hidden overflow-x-scroll overflow-y-hidden min-[800px]:snap-none snap-x min-[800px]:snap-proximity snap-mandatory min-[800px]:scroll-auto scroll-smooth no-scrollbar relative">
         {newsData.map((item, index) => (
           <NewsBox key={item.id} current={current} index={index} item={item} />
         ))}

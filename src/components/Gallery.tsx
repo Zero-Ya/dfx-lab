@@ -73,7 +73,7 @@ const Gallery = () => {
           </div>
         </div>
 
-        <div className="w-full pt-2 min-[600px]:pt-8 px-8 min-[600px]:px-12 grid grid-cols-2 gap-10 min-[600px]:gap-12 gap-y-12 min-[600px]:gap-y-16">
+        <div className="w-full pt-2 min-[600px]:pt-8 px-0 min-[600px]:px-12 grid grid-cols-2 gap-6 min-[600px]:gap-12 gap-y-12 min-[600px]:gap-y-16">
           {filteredItems.map((item) =>
             <Link to={`/gallery/${item.id}`}>
               <GalleryItem key={item.id} data={item} />
