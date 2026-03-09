@@ -43,9 +43,9 @@ const Gallery = () => {
   return (
     <>
     <Topbar />
-    <div className="flex flex-col gap-10 m-4 text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px]">
-
-      <div className="flex flex-col gap-4 min-[600px]:gap-6 pt-12 min-[600px]:pt-16">
+    <div className="flex flex-col font-montserrat gap-4 m-4 min-[600px]:px-8 min-[800px]:px-12 text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] min-[600px]:gap-6 pt-10 min-[600px]:pt-16 min-[800px]:pt-20">
+      <hr className="w-full h-[1.5px] bg-black"/>
+      <div className="flex flex-col gap-4">
         <div className="flex text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] justify-center">Gallery</div>
 
         <div className="flex gap-2 min-[600px]:gap-4 min-[800px]: text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] justify-between">
@@ -73,7 +73,7 @@ const Gallery = () => {
           </div>
         </div>
 
-        <div className="w-full pt-2 min-[600px]:pt-8 px-0 min-[600px]:px-12 grid grid-cols-2 gap-6 min-[600px]:gap-12 gap-y-12 min-[600px]:gap-y-16">
+        <div className="w-full pt-2 min-[600px]:pt-8 px-0 min-[600px]:px-6 min-[800px]:px-12 grid grid-cols-2 gap-6 min-[600px]:gap-12 gap-y-12 min-[600px]:gap-y-16">
           {filteredItems.map((item) =>
             <Link to={`/gallery/${item.id}`}>
               <GalleryItem key={item.id} data={item} />

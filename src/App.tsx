@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <Topbar />
-    <div className="flex flex-col gap-6 m-4 px-0 min-[600px]:px-8 min-[800px]:px-12">
+    <div className="flex flex-col font-montserrat gap-6 min-[600px]:gap-10 m-4 px-0 min-[600px]:px-8 min-[800px]:px-12">
 
       <News />
       <About />

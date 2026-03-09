@@ -2,7 +2,7 @@ import aboutImg from "../assets/images/about.jpg"
 
 const About = () => {
   return (
-    <div className="flex text-[10px] flex-col gap-4 min-[600px]:border rounded-xl p-3 pb-10 px-6 min-[600px]:px-12">
+    <div className="flex text-[10px] flex-col gap-4 border border-gray-100 shadow-xl rounded-xl p-3 pb-10 px-6 min-[600px]:px-12">
       <div className="text-[16px] min-[600px]:text-[24px] min-[800px]:text-[32px] min-[1024px]:text-[36px]">About DFX Lab</div>
 
       <div className="flex flex-col min-[1024px]:flex-row items-center gap-4 min-[600px]:gap-6 min-[1024px]:gap-12">

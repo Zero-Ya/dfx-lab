@@ -3,6 +3,11 @@
   src: url("/src/assets/fonts/trade-gothic-similar/OldSansBlack/OldSansBlack.ttf");
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
 @import "tailwindcss";
 
 @utility no-scrollbar {
@@ -11,4 +16,5 @@
 
 @theme {
   --font-trade-gothic: Trade Gothic, "sans-serif";
+  --font-montserrat: Montserrat, "sans-serif";
 }
