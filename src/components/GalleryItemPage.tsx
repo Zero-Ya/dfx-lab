@@ -59,7 +59,7 @@ const GalleryItemPage = () => {
             <img className="w-full rounded-xl" src={galleryItem.imageData} />
           </div>
 
-          <div className="flex flex-1 flex-col gap-4 border border-gray-100 shadow-xl p-2 rounded-xl">
+          <div className="flex flex-1 flex-col gap-4 border border-gray-100 shadow-xl p-3 min-[800px]:p-4 rounded-xl">
             <div className="flex text-[16px] min-[600px]:text-[20px] min-[800px]:text-[24px] min-[1024px]:text-[28px] flex-col gap-2">{galleryItem.name}</div>
 
             <div className="flex flex-col gap-2 h-full">
