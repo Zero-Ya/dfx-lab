@@ -51,7 +51,7 @@ const GalleryItemPage = () => {
   return (
     <>
     <Topbar />
-    <div className="flex flex-col gap-6 min-[600px]:gap-10 m-4 text-[12px] min-[600px]:text-[14px] min-[800px]:text-[16px] min-[1024px]:text-[20px]">
+    <div className="flex flex-col font-montserrat gap-6 min-[600px]:gap-10 m-4 text-[12px] min-[600px]:text-[14px] min-[800px]:text-[16px] min-[1024px]:text-[20px]">
 
       <div className="flex flex-col px-2 min-[600px]:px-8 gap-6 pt-16 min-[800px]:pt-28">
         <div className="flex flex-col min-[600px]:flex-row gap-4 min-[600px]:gap-6 min-[800px]:gap-8">
