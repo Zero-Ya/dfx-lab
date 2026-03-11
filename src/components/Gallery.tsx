@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 import Topbar from "../main-components/Topbar"
 import GalleryItem from "./GalleryItem";
 import Footer from "../main-components/Footer";
@@ -44,17 +44,17 @@ const Gallery = () => {
     <>
     <Topbar />
     <div className="flex flex-col font-montserrat gap-4 m-4 min-[600px]:px-8 min-[800px]:px-12 text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] min-[600px]:gap-6 pt-10 min-[600px]:pt-16 min-[800px]:pt-20">
-      <hr className="w-full h-[1.5px] bg-black"/>
+      <hr className="w-full h-[1.5px] bg-black shadow-2xl border-0 rounded-xl"/>
       <div className="flex flex-col gap-4">
-        <div className="flex text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] justify-center">Gallery</div>
+        <div className="flex font-montserrat-semibold text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] justify-center">Explore Projects</div>
 
         <div className="flex gap-2 min-[600px]:gap-4 min-[800px]: text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] justify-between">
-          <div className="flex flex-2 items-center gap-4 border-2 rounded-xl p-2">
+          <div className="flex flex-2 items-center gap-4 border-2 border-gray-100 shadow-xl rounded-xl p-2">
             <Search />
             <input className="w-full focus:outline-none focus:ring-0" type="search" placeholder="Search" value={query} onChange={(e) => setQuery(e.target.value)} />
           </div>
 
-          <div className="flex flex-1 items-center gap-4 border-2 rounded-xl p-2">
+          <div className="flex flex-1 items-center gap-4 border-2 border-gray-100 shadow-xl rounded-xl p-2">
             <Funnel />
             <div className="w-full">
               <select className="w-full flex gap-4" value={filter} onChange={(e) => setFilter(e.target.value)}>
@@ -83,6 +83,7 @@ const Gallery = () => {
       </div>
 
     </div>
+    <ScrollRestoration />
     <Footer />
     </>
   )

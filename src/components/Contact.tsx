@@ -1,3 +1,4 @@
+import { ScrollRestoration } from "react-router-dom"
 import Topbar from "../main-components/Topbar"
 import Footer from "../main-components/Footer"
 
@@ -6,8 +7,8 @@ const Contact = () => {
     <>
       <Topbar />
       <div className="flex flex-col font-montserrat items-center text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] m-4 min-[600px]:px-8 min-[800px]:px-12 gap-4 min-[600px]:gap-6 min-[800px]:gap-8 pt-10 min-[600px]:pt-16 min-[800px]:pt-20">
-        <hr className="w-full h-[1.5px] bg-black"/>
-        <div className="flex justify-center text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px]">Contact Us</div>
+      <hr className="w-full h-[1.5px] bg-black shadow-2xl border-0 rounded-xl"/>
+        <div className="flex font-montserrat-bold justify-center text-[24px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px]">Contact Us</div>
         
         <div className="w-11/12 min-[1024px]:w-4/5 text-center py-3 min-[600px]:py-4 min-[800px]:py-6">Have a question, collaboration idea, or project inquiry? The DFX Lab team would love to hear from you. Reach out and we’ll get back to you as soon as possible.</div>
 
@@ -46,6 +47,7 @@ const Contact = () => {
           <button className="flex justify-center p-2 bg-[#006747] hover:bg-[#004d35] text-white rounded-xl">Submit</button>
         </form>
       </div>
+      <ScrollRestoration />
       <Footer />
     </>
   )

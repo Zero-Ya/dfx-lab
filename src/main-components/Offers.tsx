@@ -1,7 +1,7 @@
 const Offers = () => {
   return (
     <div className="flex text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] min-[1440px]:text-[24px] flex-col gap-8 bg-[#006747] shadow-xl rounded-xl p-3 pb-10 px-6 min-[600px]:px-12">
-      <div className="text-white text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px]">What We Offer</div>
+      <div className="font-montserrat-semibold text-white text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px]">What We Offer</div>
 
       <div className="flex text-center flex-col gap-8 min-[600px]:gap-12 min-[1024px]:p-10 min-[1440px]:p-8 pt-0 min-[600px]:pt-6">
         <div className="flex justify-center gap-6 min-[600px]:gap-16">

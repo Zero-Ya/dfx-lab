@@ -1,11 +1,21 @@
 @font-face {
-  font-family: Trade Gothic;
+  font-family: Old-Sans-Black;
   src: url("/src/assets/fonts/trade-gothic-similar/OldSansBlack/OldSansBlack.ttf");
 }
 
 @font-face {
-  font-family: Montserrat;
-  src: url("/src/assets/fonts/Montserrat/Montserrat-Regular.ttf");
+  font-family: Montserrat-Bold;
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Semibold;
+  src: url("/src/assets/fonts/Montserrat/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+  font-family: Open-Sans;
+  src: url("/src/assets/fonts/OpenSans-Regular.ttf");
 }
 
 @import "tailwindcss";
@@ -15,6 +25,8 @@
 }
 
 @theme {
-  --font-trade-gothic: Trade Gothic, "sans-serif";
-  --font-montserrat: Montserrat, "sans-serif";
+  --font-old-sans-black: Old-Sans-Black, "sans-serif";
+  --font-montserrat-bold: Montserrat-Bold, "sans-serif";
+  --font-montserrat-semibold: Montserrat-Semibold, "sans-serif";
+  --font-open-sans: Open-Sans, "sans-serif";
 }
