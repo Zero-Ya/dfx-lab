@@ -77,7 +77,7 @@ const GalleryItemPage = () => {
         <div className="w-full h-full relative">
           <div ref={swiperRef}
             onScroll={() => handleOnScroll()}
-            className="w-full min-[600px]:w-5/6 min-[1024px]:w-4/5 flex mx-auto py-2 gap-4 overflow-x-auto relative">
+            className="w-full min-[600px]:w-5/6 min-[1024px]:w-4/5 flex mx-auto py-2 gap-4 overflow-x-scroll relative">
             {otherItems.map((item) => (
               <Link className="flex flex-col gap-1 items-center w-1/2 min-[600px]:w-1/4 h-full grow-0 shrink-0" to={`/gallery/${item.id}`}>
                 <div className="flex w-full h-28 justify-center items-center bg-gray-200 rounded-xl">

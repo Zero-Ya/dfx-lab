@@ -49,12 +49,12 @@ const Gallery = () => {
         <div className="flex font-montserrat-semibold text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] justify-center">Explore Projects</div>
 
         <div className="flex gap-2 min-[600px]:gap-4 min-[800px]: text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] justify-between">
-          <div className="flex flex-2 items-center gap-4 border-2 border-gray-100 shadow-xl rounded-xl p-2">
+          <div className="flex flex-2 items-center gap-4 border border-gray-100 shadow-xl rounded-xl p-2">
             <Search />
             <input className="w-full focus:outline-none focus:ring-0" type="search" placeholder="Search" value={query} onChange={(e) => setQuery(e.target.value)} />
           </div>
 
-          <div className="flex flex-1 items-center gap-4 border-2 border-gray-100 shadow-xl rounded-xl p-2">
+          <div className="flex flex-1 items-center gap-4 border border-gray-100 shadow-xl rounded-xl p-2">
             <Funnel />
             <div className="w-full">
               <select className="w-full flex gap-4" value={filter} onChange={(e) => setFilter(e.target.value)}>
