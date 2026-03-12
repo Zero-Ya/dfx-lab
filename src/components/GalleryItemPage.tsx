@@ -79,9 +79,9 @@ const GalleryItemPage = () => {
             onScroll={() => handleOnScroll()}
             className="w-full min-[600px]:w-5/6 min-[1024px]:w-4/5 h-full flex mx-auto py-2 gap-4 overflow-x-scroll scrollbar-thin relative">
             {otherItems.map((item) => (
-              <Link className="flex flex-col gap-1 items-center w-1/2 min-[600px]:w-1/4 h-full grow-0 shrink-0" to={`/gallery/${item.id}`}>
-                <div className="flex w-full h-full justify-center items-center bg-gray-200 rounded-xl">
-                  <img className="h-28 rounded-xl" src={item.imageData} />
+              <Link className="flex flex-col gap-1 items-center w-1/2 min-[600px]:w-1/4 h-50 grow-0 shrink-0" to={`/gallery/${item.id}`}>
+                <div className="flex w-full h-28 justify-center items-center bg-gray-200 rounded-xl">
+                  <img className="h-full rounded-xl" src={item.imageData} />
                 </div>
                 <div className="text-[10px] min-[600px]:text-[12px] min-[800px]:text-[14px] min-[1024px]:text-[16px]">{item.name}</div>
               </Link>
