@@ -43,7 +43,7 @@ const Gallery = () => {
   return (
     <>
     <Topbar />
-    <div className="flex flex-col font-montserrat gap-4 m-4 min-[600px]:px-8 min-[800px]:px-12 text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] min-[600px]:gap-6 pt-10 min-[600px]:pt-16 min-[800px]:pt-24">
+    <div className="flex flex-col font-montserrat gap-4 m-4 min-[600px]:px-8 min-[800px]:px-12 text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] min-[600px]:gap-6 pt-14 min-[600px]:pt-20 min-[800px]:pt-24">
       {/* <hr className="w-full h-[1.5px] bg-black shadow-2xl border-0 rounded-xl"/> */}
       <div className="flex flex-col gap-4">
         <div className="flex font-montserrat-semibold text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] justify-center">Explore Projects</div>
