@@ -77,24 +77,24 @@ const GalleryItemPage = () => {
         <div className="w-full h-full relative">
           <div ref={swiperRef}
             onScroll={() => handleOnScroll()}
-            className="w-full min-[600px]:w-5/6 min-[1024px]:w-4/5 h-full flex mx-auto py-2 gap-4 overflow-x-scroll scrollbar-thin">
+            className="w-4/5 min-[600px]:w-5/6 min-[1024px]:w-4/5 h-full flex mx-auto py-2 gap-4 overflow-x-scroll scrollbar-thin">
             {otherItems.map((item) => (
               <Link className="flex flex-col gap-1 items-center w-1/2 min-[600px]:w-1/4 h-full grow-0 shrink-0" to={`/gallery/${item.id}`}>
-                <div className="flex w-full h-28 justify-center items-center bg-gray-200 rounded-xl">
-                  <img className="h-full rounded-xl" src={item.imageData} />
+                <div className="flex w-full h-full justify-center items-center bg-gray-200 rounded-xl">
+                  <img className="h-20 min-[600px]:h-24 min-[800px]:h-28 rounded-xl" src={item.imageData} />
                 </div>
                 <div className="text-[10px] min-[600px]:text-[12px] min-[800px]:text-[14px] min-[1024px]:text-[16px]">{item.name}</div>
               </Link>
             ))}
           </div>
 
-          <div className="hidden min-[600px]:flex w-8 h-8 pb-1.5 justify-center items-center absolute top-1/2 right-0 min-[1024px]:right-10 min-[1440px]:right-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
+          <div className="flex text-[24px] min-[600px]:text-[28px] min-[800px]:text-[30px] size-6 min-[600px]:size-8 pb-1.5 min-[600px]:pb-2 min-[800px]:pb-2.5 justify-center items-center absolute top-1/2 -right-1 min-[600px]:right-1 min-[1024px]:right-10 min-[1440px]:right-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
             onMouseDown={() => handleSliderDown('right')}
             onMouseUp={() => handleSliderUp('right')}>
             &rsaquo;
           </div>
 
-          <div className="hidden min-[600px]:flex w-8 h-8 pb-1.5 justify-center items-center absolute top-1/2 left-0 min-[1024px]:left-10 min-[1440px]:left-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
+          <div className="flex text-[24px] min-[600px]:text-[28px] min-[800px]:text-[30px] size-6 min-[600px]:size-8 pb-1.5 min-[600px]:pb-2 min-[800px]:pb-2.5 justify-center items-center absolute top-1/2 -left-1 min-[600px]:left-1 min-[1024px]:left-10 min-[1440px]:left-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
             onMouseDown={() => handleSliderDown('left')}
             onMouseUp={() => handleSliderUp('left')}>
             &lsaquo;
