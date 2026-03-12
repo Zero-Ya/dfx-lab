@@ -24,6 +24,30 @@
   @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }
 
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 5px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100vh;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100vh;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* For Firefox */
+  .scrollbar-thin {
+    /* -ms-overflow-style: ; */
+    scrollbar-width: thin;
+  }
+}
+
 @theme {
   --font-old-sans-black: Old-Sans-Black, "sans-serif";
   --font-montserrat-bold: Montserrat-Bold, "sans-serif";
