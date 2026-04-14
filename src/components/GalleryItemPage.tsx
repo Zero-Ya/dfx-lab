@@ -51,7 +51,7 @@ const GalleryItemPage = () => {
   return (
     <>
     <Topbar />
-    <div className="flex flex-col font-montserrat gap-6 min-[600px]:gap-10 m-4 text-[12px] min-[600px]:text-[14px] min-[800px]:text-[16px] min-[1024px]:text-[20px]">
+    <div className="flex flex-col font-montserrat gap-6 min-[600px]:gap-10 m-4 text-[10px] min-[600px]:text-[12px] min-[800px]:text-[14px] min-[1024px]:text-[18px]">
 
       <div className="flex flex-col px-2 min-[600px]:px-8 gap-6 pt-16 min-[800px]:pt-28">
         <div className="flex flex-col min-[600px]:flex-row gap-4 min-[600px]:gap-6 min-[800px]:gap-8">
@@ -60,7 +60,7 @@ const GalleryItemPage = () => {
           </div>
 
           <div className="flex flex-1 flex-col gap-4 border border-gray-100 shadow-xl p-3 min-[800px]:p-4 rounded-xl">
-            <div className="flex text-[16px] min-[600px]:text-[20px] min-[800px]:text-[24px] min-[1024px]:text-[28px] flex-col gap-2">{galleryItem.name}</div>
+            <div className="flex text-[14px] min-[600px]:text-[18px] min-[800px]:text-[22px] min-[1024px]:text-[26px] flex-col gap-2">{galleryItem.name}</div>
 
             <div className="flex flex-col gap-2 h-full">
               <div>Date: {galleryItem.date}</div>
@@ -83,18 +83,18 @@ const GalleryItemPage = () => {
                 <div className="flex w-full h-full justify-center items-center bg-gray-200 rounded-xl">
                   <img className="h-20 min-[600px]:h-24 min-[800px]:h-28 rounded-xl" src={item.imageData} />
                 </div>
-                <div className="text-[10px] min-[600px]:text-[12px] min-[800px]:text-[14px] min-[1024px]:text-[16px]">{item.name}</div>
+                <div className="text-[8px] min-[600px]:text-[10px] min-[800px]:text-[12px] min-[1024px]:text-[14px]">{item.name}</div>
               </Link>
             ))}
           </div>
 
-          <div className="flex text-[24px] min-[600px]:text-[28px] min-[800px]:text-[30px] size-6 min-[600px]:size-8 pb-1.5 min-[600px]:pb-2 min-[800px]:pb-2.5 justify-center items-center absolute top-1/2 -right-1 min-[600px]:right-1 min-[1024px]:right-10 min-[1440px]:right-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
+          <div className="flex text-[22px] min-[600px]:text-[26px] min-[800px]:text-[28px] size-6 min-[600px]:size-8 pb-1.5 min-[600px]:pb-2 min-[800px]:pb-2.5 justify-center items-center absolute top-1/2 -right-1 min-[600px]:right-1 min-[1024px]:right-10 min-[1440px]:right-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
             onMouseDown={() => handleSliderDown('right')}
             onMouseUp={() => handleSliderUp('right')}>
             &rsaquo;
           </div>
 
-          <div className="flex text-[24px] min-[600px]:text-[28px] min-[800px]:text-[30px] size-6 min-[600px]:size-8 pb-1.5 min-[600px]:pb-2 min-[800px]:pb-2.5 justify-center items-center absolute top-1/2 -left-1 min-[600px]:left-1 min-[1024px]:left-10 min-[1440px]:left-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
+          <div className="flex text-[22px] min-[600px]:text-[26px] min-[800px]:text-[28px] size-6 min-[600px]:size-8 pb-1.5 min-[600px]:pb-2 min-[800px]:pb-2.5 justify-center items-center absolute top-1/2 -left-1 min-[600px]:left-1 min-[1024px]:left-10 min-[1440px]:left-20 -translate-y-1/2 border-black border rounded-full cursor-pointer"
             onMouseDown={() => handleSliderDown('left')}
             onMouseUp={() => handleSliderUp('left')}>
             &lsaquo;

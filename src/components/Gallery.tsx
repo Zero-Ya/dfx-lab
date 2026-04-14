@@ -43,12 +43,12 @@ const Gallery = () => {
   return (
     <>
     <Topbar />
-    <div className="flex flex-col font-montserrat gap-4 m-4 min-[600px]:px-8 min-[800px]:px-12 text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] min-[600px]:gap-6 pt-14 min-[600px]:pt-20 min-[800px]:pt-24">
+    <div className="flex flex-col font-montserrat gap-4 m-4 min-[600px]:px-8 min-[800px]:px-12 text-[8px] min-[600px]:text-[10px] min-[800px]:text-[14px] min-[1024px]:text-[18px] min-[600px]:gap-6 pt-14 min-[600px]:pt-20 min-[800px]:pt-24">
       {/* <hr className="w-full h-[1.5px] bg-black shadow-2xl border-0 rounded-xl"/> */}
       <div className="flex flex-col gap-4">
-        <div className="flex font-montserrat-semibold text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] justify-center">Explore Projects</div>
+        <div className="flex font-montserrat-semibold text-[14px] min-[600px]:text-[26px] min-[800px]:text-[30px] min-[1024px]:text-[34px] justify-center">Explore Projects</div>
 
-        <div className="flex gap-2 min-[600px]:gap-4 min-[800px]: text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] justify-between">
+        <div className="flex gap-2 min-[600px]:gap-4 text-[8px] min-[600px]:text-[10px] min-[800px]:text-[14px] min-[1024px]:text-[18px] justify-between">
           <div className="flex flex-2 items-center gap-4 border border-gray-100 shadow-xl rounded-xl p-2">
             <Search />
             <input className="w-full focus:outline-none focus:ring-0" type="search" placeholder="Search" value={query} onChange={(e) => setQuery(e.target.value)} />

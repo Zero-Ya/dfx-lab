@@ -20,9 +20,9 @@ const NewsBox = ({ current, index, item }
       <div className={`w-full h-full py-0 px-3 min-[600px]:p-3 flex flex-col flex-1 absolute overflow-hidden
       ${current !== index && "min-[800px]:hidden"}
       `}>
-        <div className="flex h-full justify-start text-white text-[10px] min-[600px]:text-[12px] min-[800px]:text-[16px] min-[1024px]:text-[20px] flex-col gap-4 min-[600px]:gap-6 py-4 px-3 min-[600px]:px-9 min-[800px]:px-16 relative">
-          <div className="text-[16px] min-[600px]:text-[24px] min-[800px]:text-[32px] min-[1024px]:text-[36px]">{item.title}</div>
-          <div className="text-[14px] min-[600px]:text-[16px] min-[800px]:text-[20px] min-[1024px]:text-[24px]">{item.subtitle}</div>
+        <div className="flex h-full justify-start text-white text-[8px] min-[600px]:text-[10px] min-[800px]:text-[14px] min-[1024px]:text-[18px] flex-col gap-4 min-[600px]:gap-6 py-4 px-3 min-[600px]:px-9 min-[800px]:px-16 relative">
+          <div className="text-[14px] min-[600px]:text-[22px] min-[800px]:text-[30px] min-[1024px]:text-[34px]">{item.title}</div>
+          <div className="text-[12px] min-[600px]:text-[14px] min-[800px]:text-[18px] min-[1024px]:text-[22px]">{item.subtitle}</div>
           <div>{item.description}</div>
         </div>
 

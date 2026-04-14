@@ -36,10 +36,10 @@ const News = () => {
   })
 
   return (
-    <div className="flex text-[16px] flex-col gap-4 justify-center items-center pt-14 min-[600px]:pt-20 min-[800px]:pt-24"> 
+    <div className="flex text-[14px] flex-col gap-4 justify-center items-center pt-14 min-[600px]:pt-20 min-[800px]:pt-24"> 
       {/* Previously pt-10 min-[600px]:pt-16 min-[800px]:pt-20 */}
       {/* <hr className="w-full h-[1.5px] bg-black shadow-2xl border-0 rounded-xl"/> */}
-      <div className="w-full font-montserrat-semibold text-left text-[16px] min-[600px]:text-[28px] min-[800px]:text-[32px] min-[1024px]:text-[36px] pl-6 min-[600px]:pl-12">What's New</div>
+      <div className="w-full font-montserrat-semibold text-left text-[14px] min-[600px]:text-[26px] min-[800px]:text-[30px] min-[1024px]:text-[34px] pl-6 min-[600px]:pl-12">What's New</div>
 
       <div className="flex size-full relative">
 
@@ -53,8 +53,8 @@ const News = () => {
         {newsData.map((item, index) => (
           <NewsBox key={item.id} current={current} index={index} item={item} />
         ))}
-        <div onClick={slideLeft} className={`${autoPlay && "min-[800px]:hidden"} hidden select-none text-3xl text-white size-4 min-[600px]:size-8 pb-2 pl-0 min-[800px]:flex justify-center items-center absolute top-1/2 left-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&lsaquo;</div>
-        <div onClick={slideRight} className={`${autoPlay && "min-[800px]:hidden"} hidden select-none text-3xl text-white size-4 min-[600px]:size-8 pb-2 pl-0.5 min-[800px]:flex justify-center items-center absolute top-1/2 right-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&rsaquo;</div>
+        <div onClick={slideLeft} className={`${autoPlay && "min-[800px]:hidden"} hidden select-none text-[28px] text-white size-4 min-[600px]:size-8 pb-2 pl-0 min-[800px]:flex justify-center items-center absolute top-1/2 left-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&lsaquo;</div>
+        <div onClick={slideRight} className={`${autoPlay && "min-[800px]:hidden"} hidden select-none text-[28px] text-white size-4 min-[600px]:size-8 pb-2 pl-0.5 min-[800px]:flex justify-center items-center absolute top-1/2 right-5 -translate-y-1/2 border-white border rounded-full cursor-pointer`}>&rsaquo;</div>
       </div>
 
       <div className="absolute bottom-1 left-1/2 -translate-x-1/2 translate-y-0">
